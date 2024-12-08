@@ -10,6 +10,6 @@ day_padded=$(printf "%02d" $day)
 # Create the new folder
 mkdir "day$day_padded"
 cd "day$day_padded"
-touch main.py
+touch part1.py
 touch input.txt
 touch test.txt
