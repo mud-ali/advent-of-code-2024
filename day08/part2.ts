@@ -45,8 +45,6 @@ let antennae: { [key: string]: Coord[] } = {}
 
 for (let i = 0; i < GRID_SIZE; i++) {
     for (let j = 0; j < GRID_SIZE; j++) {
-        // if (grid[i][j] === ".") continue
-
         if (Object.keys(antennae).includes(grid[i][j])) {
             antennae[grid[i][j]].push(new Coord(i, j))
         } else {
@@ -83,9 +81,6 @@ for (let frequency of Object.keys(antennae)) {
                             if (grid[i][j] !== "#") count++;
                             grid[i][j] = "#"
                             break
-                        } else {
-                            // if (!distance.spot.equals(distance2.spot))
-                            //     console.log(distance2.spot, distance.spot, distance2.dist, distance.dist)
                         }
                     }
                 }

@@ -84,9 +84,6 @@ for (let frequency of Object.keys(antennae)) {
                             if (grid[i][j] !== "#") count++;
                             grid[i][j] = "#"
                             break
-                        } else {
-                            // if (!distance.spot.equals(distance2.spot))
-                            //     console.log(distance2.spot, distance.spot, distance2.dist, distance.dist)
                         }
                     }
                 }
